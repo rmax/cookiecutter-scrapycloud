@@ -1,0 +1,7 @@
+projects:
+  default: {{cookiecutter.project_id}}
+
+stacks:
+  default: scrapy:1.1
+
+requirements_file: requirements.txt
