@@ -1,5 +1,5 @@
 projects:
-  default: {{cookiecutter.project_id}}
+  default: {{cookiecutter.scrapycloud_id}}
 
 stacks:
   default: scrapy:1.1
