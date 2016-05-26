@@ -10,7 +10,7 @@ What is included:
 * A default ``scrapinghub.yml``, `Scrapy Cloud`_ configuration file.
 * A default ``Dockerfile`` to build a docker image to replicate the
   `Scrapy Cloud`_ running container.
-* Helpful scripts to archive job items and dump items from a Collection.
+* Useful scripts to archive job items and dump items from a Collection.
 
 Usage
 -----
