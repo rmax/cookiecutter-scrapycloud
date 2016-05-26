@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name         = '{{cookiecutter.project_name}}',
+    name         = '{{cookiecutter.project_slug}}',
     version      = '0.1.0',
     packages     = find_packages(),
     entry_points = {'scrapy': ['settings = {{cookiecutter.project_module}}.settings']},
