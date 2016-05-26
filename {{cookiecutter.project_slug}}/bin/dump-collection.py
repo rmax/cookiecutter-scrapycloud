@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # Copyright (c) Rolando Espinoza.
 # See gh:rolando/cookiecutter-scrapycloud/LICENSE for details.
 """A script to dump items storead in a collection."""

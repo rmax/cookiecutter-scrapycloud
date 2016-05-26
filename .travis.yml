@@ -1,0 +1,16 @@
+language: python
+
+python: 3.5
+env:
+  - TOXENV=py27
+  - TOXENV=py35
+
+matrix:
+  allow_failures:
+    - env: TOXENV=py35
+
+install:
+  - pip install -U tox
+
+script:
+  - tox
