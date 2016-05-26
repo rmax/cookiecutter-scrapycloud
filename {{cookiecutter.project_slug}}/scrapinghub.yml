@@ -5,3 +5,5 @@ stacks:
   default: scrapy:1.1
 
 requirements_file: requirements.txt
+
+version: GIT

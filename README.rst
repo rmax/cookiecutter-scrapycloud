@@ -10,6 +10,7 @@ What is included:
 * A default ``scrapinghub.yml``, `Scrapy Cloud`_ configuration file.
 * A default ``Dockerfile`` to build a docker image to replicate the
   `Scrapy Cloud`_ running container.
+* Useful scripts to archive job items and dump items from a Collection.
 
 Usage
 -----
@@ -29,7 +30,9 @@ First we bootstrap our project and create a spider:
 .. code-block::
 
   $ cookiecutter gh:rolando/cookiecutter-scrapycloud
-  project_slug [project_name]: myproject
+  project_name [Project Name]: myproject
+  project_slug [myproject]:
+  project_module [myproject]:
   scrapycloud_id [Scrapy Cloud Project ID]: 12345
   $ cd myproject
   $ pip install -r requirements.txt -r dev-requirements.txt
@@ -63,6 +66,13 @@ Finally, we can deploy to our `Scrapy Cloud`_ project and schedule the spider::
 
   $ shub deploy
   $ shub schedule blogspider
+
+Scripts
+-------
+
+* ``bin/archive-items.py``: A full-featured script to export all jobs output to
+  a given collection. This script can be set up as a Periodic Job on Scrapy Cloud.
+* ``bin/dump-collection.py``: A simple script to dump collection's items.
 
 License
 -------
