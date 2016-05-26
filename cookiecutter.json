@@ -1,6 +1,6 @@
 {
     "project_name": "Scrapy Project",
     "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '-')}}",
-    "project_module": "{{cookiecutter.project_name.lower().replace(' ', '_')}}",
+    "project_module": "{{cookiecutter.project_slug.replace('-', '_')}}",
     "scrapycloud_id": "Scrapy Cloud Project ID"
 }
