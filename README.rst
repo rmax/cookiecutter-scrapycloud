@@ -30,7 +30,9 @@ First we bootstrap our project and create a spider:
 .. code-block::
 
   $ cookiecutter gh:rolando/cookiecutter-scrapycloud
-  project_slug [project_name]: myproject
+  project_name [Project Name]: myproject
+  project_slug [myproject]:
+  project_module [myproject]:
   scrapycloud_id [Scrapy Cloud Project ID]: 12345
   $ cd myproject
   $ pip install -r requirements.txt -r dev-requirements.txt

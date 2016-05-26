@@ -11,8 +11,8 @@
 
 BOT_NAME = '{{cookiecutter.project_slug}}'
 
-SPIDER_MODULES = ['{{cookiecutter.project_slug}}.spiders']
-NEWSPIDER_MODULE = '{{cookiecutter.project_slug}}.spiders'
+SPIDER_MODULES = ['{{cookiecutter.project_module}}.spiders']
+NEWSPIDER_MODULE = '{{cookiecutter.project_module}}.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    '{{cookiecutter.project_slug}}.middlewares.MyCustomSpiderMiddleware': 543,
+#    '{{cookiecutter.project_module}}.middlewares.MyCustomSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    '{{cookiecutter.project_slug}}.middlewares.MyCustomDownloaderMiddleware': 543,
+#    '{{cookiecutter.project_module}}.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    '{{cookiecutter.project_slug}}.pipelines.SomePipeline': 300,
+#    '{{cookiecutter.project_module}}.pipelines.SomePipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
