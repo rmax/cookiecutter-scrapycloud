@@ -65,6 +65,13 @@ Finally, we can deploy to our `Scrapy Cloud`_ project and schedule the spider::
   $ shub deploy
   $ shub schedule blogspider
 
+Scripts
+-------
+
+* ``bin/archive-items.py``: A full-featured script to export all jobs output to
+  a given collection. This script can be set up as a Periodic Job on Scrapy Cloud.
+* ``bin/dump-collection.py``: A simple script to dump collection's items.
+
 License
 -------
 This project is licensed under the terms of the `MIT License`_
