@@ -66,7 +66,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    '{{cookiecutter.project_module}}.pipelines.SomePipeline': 300,
+#    '{{cookiecutter.project_module}}.pipelines.{{ cookiecutter.project_module|title }}Pipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
