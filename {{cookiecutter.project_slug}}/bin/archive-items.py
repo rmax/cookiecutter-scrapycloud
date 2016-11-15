@@ -40,15 +40,22 @@ def import_func(path):
 
 def process_job(job, process_func, write_func, batch_size, dry_run):
     n = 0
-    for n, item in enumerate(job.items.iter_values(), start=1):
+    for item in job.items.iter_values():
         if process_func:
-            item = process_func(item)
+            item = process_func(job, item)
+            if item is None:
+                continue
+
         if '_key' not in item:
             raise ValueError("item must have a _key field")
+
         if not dry_run:
             write_func(item)
+
+        n += 1
         if n % batch_size == 0:
             logger.info("[%s] Stored %s items", job.key, n)
+
     return n
 
 
