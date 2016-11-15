@@ -14,6 +14,7 @@ BOT_NAME = '{{cookiecutter.project_slug}}'
 SPIDER_MODULES = ['{{cookiecutter.project_module}}.spiders']
 NEWSPIDER_MODULE = '{{cookiecutter.project_module}}.spiders'
 
+LOG_LEVEL = 'DEBUG'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = '{{cookiecutter.project_slug}} (+http://www.yourdomain.com)'
