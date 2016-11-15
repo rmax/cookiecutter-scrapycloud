@@ -32,3 +32,6 @@ docs/_build/
 
 # vim .swp/.swo/.sw* recovery files
 *.sw*
+
+# Scrapy
+.scrapy/
