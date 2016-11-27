@@ -2,12 +2,13 @@
 {{ cookiecutter.project_name }}
 ===============================
 
-TODO Project description
+This is a base Scrapy project suited to run on Scrapinghub platform.
 
 Features
 --------
 
-* TODO
+* Python 3.5
+* Scrapy 1.2
 
 Credits
 ---------

@@ -2,9 +2,10 @@ projects:
   default: {{cookiecutter.scrapycloud_id}}
 
 stacks:
-  default: scrapy:1.1
+  default: scrapy:1.2-py3
 
-requirements_file: requirements.txt
+requirements:
+  file: requirements.txt
 
 # Uncomment this to use git revision as version.
 #version: GIT

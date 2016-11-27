@@ -1,7 +1,10 @@
-FROM scrapinghub/scrapinghub-stack-scrapy:1.1
+FROM scrapinghub/scrapinghub-stack-scrapy:1.2-py3
 
 WORKDIR /app
 ADD . /app
-RUN pip --no-cache-dir --disable-pip-version-check install -r /app/requirements.txt
+RUN set -x \
+    && pip --no-cache-dir \
+      --disable-pip-version-check \
+      install -r /app/requirements.txt
 
-CMD ["bash"]
+CMD ["scrapy", "list"]
